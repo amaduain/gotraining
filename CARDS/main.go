@@ -1,9 +1,14 @@
 package main
 
+import "fmt"
+
 func main() {
 	cards := newDeck()
+	hands, remainingDeck := deal(cards, 5)
+	hands.print()
+	fmt.Println("################ REMAINING DECK ###############")
+	remainingDeck.print()
 
-	cards.print()
 }
 
 func newCard() string {
