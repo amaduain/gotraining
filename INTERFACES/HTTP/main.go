@@ -15,6 +15,6 @@ func main() {
 	}
 	fmt.Println(resp)
 	fmt.Println(resp.StatusCode)
-	io.Copy
+	io.Copy(os.Stdout, resp.Body)
 
 }
